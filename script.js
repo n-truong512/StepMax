@@ -1085,36 +1085,36 @@ const products = [
 
 const modelImageSets = {
   duongpho: [
-    "images/duongpho1.png",
-    "images/duongpho2.png",
-    "images/duongpho3.png",
-    "images/duongpho4.png"
+    "img/duongpho1.png",
+    "img/duongpho2.png",
+    "img/duongpho3.png",
+    "img/duongpho4.png"
   ],
   urban: [
-    "images/urban1.png",
-    "images/urban2.png",
-    "images/urban3.png",
-    "images/urban4.png"
+    "img/urban1.png",
+    "img/urban2.png",
+    "img/urban3.png",
+    "img/urban4.png"
   ],
   thethao: [
-    "images/thethao1.png",
-    "images/thethao2.png",
-    "images/thethao3.png"
+    "img/thethao1.png",
+    "img/thethao2.png",
+    "img/thethao3.png"
   ],
   chaybo: [
-    "images/chaybo1.png",
-    "images/chaybo2.png",
-    "images/chaybo3.png"
+    "img/chaybo1.png",
+    "img/chaybo2.png",
+    "img/chaybo3.png"
   ],
   casual: [
-    "images/thuongngay1.png",
-    "images/thuongngay2.png",
-    "images/thuongngay3.png"
+    "img/thuongngay1.png",
+    "img/thuongngay2.png",
+    "img/thuongngay3.png"
   ],
   mixmatch: [
-    "images/phoido1.png",
-    "images/phoido2.png",
-    "images/phoido3.png"
+    "img/phoido1.png",
+    "img/phoido2.png",
+    "img/phoido3.png"
   ],
 };
 
