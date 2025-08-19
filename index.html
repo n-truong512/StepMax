@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>StepMax - Sneaker Store</title>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header transparent">
+  <div class="container edge nav-wrap">
+    <a href="#home" class="brand">
+      <img src="images/logo.png" alt="logo"/>
+    </a>
+    <nav class="main-nav">
+      <a href="#home">Trang chủ</a>
+      <a href="#about">Giới thiệu</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#services">Dịch vụ</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="search-box">
+        <input id="search-input" type="text" placeholder="Tìm kiếm sản phẩm"/>
+        <button id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <button id="btn-login" class="btn ghost">Đăng nhập</button>
+      <button id="btn-cart" class="icon-btn">
+        <i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="badge">0</span>
+      </button>
+    </div>
+    <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-slider" id="hero-slider">
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/banner1.png');"></div>
+      <div class="hero-content">
+        <h1>Phong cách dẫn lối</h1>
+        <p>Nhẹ, êm và bền bỉ cho mọi bước chân</p>
+        <a href="#products" class="btn">Mua ngay</a>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/banner2.png');"></div>
+      <div class="hero-content">
+        <h1>Flash Sale</h1>
+        <p>Giảm đến 50% • Kết thúc sau <span id="flash-countdown">00:00:00</span></p>
+        <a href="#featured" class="btn">Săn deal</a>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/banner3.png');"></div>
+      <div class="hero-content">
+        <h1>Hot trong tháng</h1>
+        <p>Nâng cấp tủ giày với bộ sưu tập mới</p>
+        <a href="#products" class="btn">Khám phá</a>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/banner4.png');"></div>
+      <div class="hero-content">
+        <h1>Top hottrend</h1>
+        <p>Mẫu giày được yêu thích nhất tuần</p>
+        <a href="#products" class="btn">Xem ngay</a>
+      </div>
+    </div>
+  </div>
+  <button class="hero-nav prev" id="hero-prev"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="hero-nav next" id="hero-next"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="hero-dots" id="hero-dots"></div>
+</section>
+
+<section id="featured" class="featured">
+  <div class="container edge">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="marquee">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container edge about-grid">
+    <div class="about-text">
+      <h2>Về chúng tôi</h2>
+      <p>StepMax là thương hiệu giày thể thao theo đuổi phong cách tối giản và cảm hứng chuyển động. Chúng tôi tuyển chọn vật liệu thân thiện, chú trọng độ êm và độ bền để mỗi đôi giày đồng hành cùng bạn qua tập luyện, đi làm và dạo phố. Mục tiêu của chúng tôi: mang lại một trải nghiệm mua sắm mượt mà, dịch vụ tận tâm và những sản phẩm giúp bạn tự tin bước tiếp.</p>
+      <ul class="about-bullets">
+        <li>Đổi trả dễ dàng trong 15 ngày</li>
+        <li>Bảo hành keo đế 12 tháng</li>
+        <li>Miễn phí vận chuyển đơn từ 700k</li>
+      </ul>
+    </div>
+    <div class="about-media">
+      <div class="stack">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800" alt="product"/>
+        <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=800" alt="store"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Khu người mẫu mang sản phẩm -->
+<section id="models" class="models">
+  <div class="container edge">
+    <h2>Người mẫu mang sản phẩm</h2>
+    <p class="models-sub">Hình ảnh lookbook từ khách hàng và người mẫu của StepMax</p>
+    <div class="models-grid" id="models-grid">
+      <!-- Bộ ảnh đường phố -->
+      <figure data-img-set="duongpho">
+        <img src="images/duongpho1.png" alt="model duongpho1">
+        <figcaption>Phong cách đường phố</figcaption>
+      </figure>
+      <figure data-img-set="urban">
+        <img src="images/urban4.png" alt="model urban1">
+        <figcaption>Phong cách urban</figcaption>
+      </figure>
+      
+      <!-- Bộ ảnh thể thao -->
+      <figure data-img-set="thethao">
+        <img src="images/thethao1.png" alt="model thethao1">
+        <figcaption>Look thể thao</figcaption>
+      </figure>
+      <figure data-img-set="chaybo">
+        <img src="images/chaybo1.png" alt="model chaybo1">
+        <figcaption>Chạy bộ</figcaption>
+      </figure>
+      
+      <!-- Bộ ảnh casual -->
+      <figure data-img-set="casual">
+        <img src="images/thuongngay1.png" alt="model casual1">
+        <figcaption>Phong cách thường ngày</figcaption>
+      </figure>
+      <figure data-img-set="mixmatch">
+        <img src="images/phoido1.png" alt="model mixmatch1">
+        <figcaption>Phối đồ đơn giản</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="catalog">
+  <div class="container edge catalog-grid">
+    <aside class="filters">
+      <h3>Bộ lọc</h3>
+      <div class="filter-group">
+        <label>Danh mục</label>
+        <select id="f-category">
+          <option value="all">Tất cả</option>
+          <option value="running">Chạy bộ</option>
+          <option value="training">Tập gym</option>
+          <option value="basketball">Bóng rổ</option>
+          <option value="casual">Thời trang</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Thương hiệu</label>
+        <select id="f-brand">
+          <option value="all">Tất cả</option>
+          <option value="Nike">Nike</option>
+          <option value="Adidas">Adidas</option>
+          <option value="Puma">Puma</option>
+          <option value="New Balance">New Balance</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Khoảng giá</label>
+        <input type="number" id="f-min" placeholder="Từ"/>
+        <input type="number" id="f-max" placeholder="Đến"/>
+      </div>
+      <div class="filter-group">
+        <label>Kích thước</label>
+        <div class="size-choices" id="f-sizes"></div>
+      </div>
+      <div class="filter-group">
+        <label>Đánh giá tối thiểu</label>
+        <input type="range" id="f-rating" min="0" max="5" step="0.5" value="0"/>
+        <div class="range-val"><span id="rating-val">0</span> sao+</div>
+      </div>
+      <div class="filter-group">
+        <label>Sắp xếp</label>
+        <select id="f-sort">
+          <option value="popular">Phổ biến</option>
+          <option value="price-asc">Giá tăng dần</option>
+          <option value="price-desc">Giá giảm dần</option>
+          <option value="rating-desc">Đánh giá cao</option>
+          <option value="purchased-desc">Lượt mua nhiều</option>
+        </select>
+      </div>
+      <button class="btn full" id="btn-apply" style="display:none;">Áp dụng</button>
+      <button class="btn ghost full" id="btn-reset">Xóa lọc</button>
+    </aside>
+    <main class="product-list">
+      <div id="products-grid" class="grid"></div>
+      <div id="pagination" class="pagination"></div>
+    </main>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container edge">
+    <h2>Dịch vụ của chúng tôi</h2>
+
+    <div class="service-ticker" id="service-ticker">
+      <span data-msg="Miễn phí đổi size tận nhà."></span>
+      <span data-msg="Vệ sinh giày cơ bản trọn đời."></span>
+      <span data-msg="Ưu đãi thành viên đến 15%."></span>
+      <span data-msg="Giao nhanh 2–24h nội thành."></span>
+    </div>
+
+    <div class="service-grid">
+      <div class="service-card" data-detail="Giao nhanh trong 2–24h, có chọn khung giờ và theo dõi tình trạng đơn hàng theo thời gian thực." data-url="services/delivery.html">
+        <i class="fa-solid fa-truck"></i>
+        <h4>Giao nhanh</h4>
+        <p>Giao trong 2–24h tại nội thành, có hẹn giờ.</p>
+        <button class="svc-more btn ghostt">Xem chi tiết</button>
+      </div>
+      <div class="service-card" data-detail="Đổi size/mẫu trong 15 ngày. Tạo yêu cầu đổi trên web và nhân viên đến nhận tại nhà." data-url="services/returns.html">
+        <i class="fa-solid fa-rotate-left"></i>
+        <h4>Đổi trả dễ</h4>
+        <p>Đổi size, đổi mẫu trong 15 ngày kể từ ngày nhận.</p>
+        <button class="svc-more btn ghostt">Xem chi tiết</button>
+      </div>
+      <div class="service-card" data-detail="Bảo hành keo đế 12 tháng, hỗ trợ vệ sinh cơ bản. Lỗi do NSX 1 đổi 1." data-url="services/warranty.html">
+        <i class="fa-solid fa-shield-heart"></i>
+        <h4>Bảo hành</h4>
+        <p>Bảo hành keo đế 12 tháng, hỗ trợ vệ sinh cơ bản.</p>
+        <button class="svc-more btn ghostt">Xem chi tiết</button>
+      </div>
+      <div class="service-card" data-detail="Tư vấn 24/7 qua Facebook/Zalo. Gợi ý size theo chân, mục đích sử dụng và form." data-url="services/support.html">
+        <i class="fa-solid fa-headset"></i>
+        <h4>Hỗ trợ 24/7</h4>
+        <p>Inbox Facebook/Zalo bất cứ lúc nào để được tư vấn.</p>
+        <button class="svc-more btn ghostt">Xem chi tiết</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container edge contact-grid">
+    <div class="map-wrap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235.9707839494865!2d106.59902543588757!3d10.857872173620278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1755594089848!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+    <div class="contact-info">
+      <h2>Liên hệ</h2>
+      <p>StepMax Store, 1 Bắc Lân, Bà Điểm, Hóc Môn, TP.HCM</p>
+      <p>Hotline: 0900 000 000 • Email: hello@stepmax.vn</p>
+      <form id="contact-form" class="form">
+        <input type="text" id="c-name" placeholder="Họ tên"/>
+        <input type="email" id="c-email" placeholder="Email"/>
+        <input type="tel" id="c-phone" placeholder="Số điện thoại"/>
+        <textarea id="c-msg" placeholder="Nội dung"></textarea>
+        <button class="btn" type="submit">Gửi</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container edge footer-grid">
+    <div class="f-brand">
+      <img src="images/logo.png" alt="logo"/>
+    </div>
+    <div class="f-links">
+      <a href="#">Blog</a>
+      <a href="#">Shopee</a>
+      <a href="#">Lazada</a>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Tuyển dụng</a>
+    </div>
+    <div class="f-copy">© 2025 StepMax</div>
+  </div>
+</footer>
+
+<div class="cart" id="cart">
+  <div class="cart-head">
+    <h3>Giỏ hàng</h3>
+    <button class="icon-btn" id="cart-close"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div id="cart-items" class="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-total">Tổng: <strong id="cart-total">0₫</strong></div>
+    <button class="btn full" id="btn-checkout">Thanh toán</button>
+  </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="modal" id="auth-modal">
+  <div class="modal-box">
+    <div class="tabs">
+      <button class="tab active" data-tab="login">Đăng nhập</button>
+      <button class="tab" data-tab="register">Đăng ký</button>
+    </div>
+    <div class="tab-content show" id="tab-login">
+      <input id="login-email" type="email" placeholder="Email"/>
+      <input id="login-pass" type="password" placeholder="Mật khẩu"/>
+      <button class="btn full" id="do-login">Đăng nhập</button>
+    </div>
+    <div class="tab-content" id="tab-register">
+      <input id="reg-name" type="text" placeholder="Họ tên"/>
+      <input id="reg-email" type="email" placeholder="Email"/>
+      <input id="reg-pass" type="password" placeholder="Mật khẩu"/>
+      <button class="btn full" id="do-register">Tạo tài khoản</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="product-modal">
+  <div class="modal-box product-box">
+    <button class="icon-btn close prominent" id="pm-close"><i class="fa-solid fa-xmark"></i> <span class="label">Đóng</span></button>
+    <div class="pm-grid">
+      <div class="pm-gallery">
+        <img id="pm-hero" src="" alt=""/>
+        <div id="pm-thumbs" class="pm-thumbs"></div>
+      </div>
+      <div class="pm-info">
+        <h3 id="pm-name"></h3>
+        <div class="pm-meta">
+          <span id="pm-stars"></span>
+          <span id="pm-review-count"></span>
+          <span id="pm-purchased"></span>
+          <span id="pm-rebuy"></span>
+        </div>
+        <div class="pm-price" id="pm-price"></div>
+        <div class="pm-desc" id="pm-desc"></div>
+        <div class="pm-colors">
+          <div class="label">Màu sắc</div>
+          <div id="pm-color-list" class="color-choices"></div>
+        </div>
+        <div class="pm-sizes">
+          <div class="label">Kích thước</div>
+          <div id="pm-size-list" class="size-choices"></div>
+        </div>
+        <div class="pm-quantity">
+          <div class="label">Số lượng</div>
+          <input type="number" id="pm-quantity-input" value="1" min="1"/>
+        </div>
+        <button class="btn full" id="pm-add">Thêm vào giỏ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="model-modal">
+  <div class="modal-box model-box">
+    <button class="icon-btn close prominent" id="mm-close"><i class="fa-solid fa-xmark"></i> <span class="label">Đóng</span></button>
+    <div class="mm-grid">
+      <div class="mm-gallery">
+        <img id="mm-hero" src="" alt=""/>
+        <div id="mm-thumbs" class="mm-thumbs"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
